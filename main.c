@@ -1,7 +1,3 @@
-// MPI parallel gaussian elimination
-// By: Nick from CoffeeBeforeArch
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <mpi/mpi.h>
