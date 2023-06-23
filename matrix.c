@@ -6,8 +6,10 @@
 
 void fill_matrix(double *mtr, int N, int M) {
     for (int i = 0; i < N; i++)
-        for (int j = 0; j < M; j++)
+        for (int j = 0; j < M; j++) {
             mtr[i * M + j] = rand() % 40;
+            mtr[i * M + j]  = mtr[i * M + j] >-1 && mtr[i * M + j] <1 ? 3.3 : mtr[i * M + j];
+        }
 }
 
 void printf_matrix(double *mtr, int N, int M) {
